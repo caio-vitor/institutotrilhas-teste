@@ -868,6 +868,7 @@ aside {
   aside .sobre-cta {
     -webkit-background-image: linear-gradient(rgba(120, 130, 150, 0.4), rgba(120, 130, 150, 0.4)), url("../assets/imgs/aaron-burden-236415_filtro.jpg"); 
             background-image: linear-gradient(rgba(120, 130, 150, 0.4), rgba(120, 130, 150, 0.4)), url("../assets/imgs/aaron-burden-236415_filtro.jpg");
+    -webkit-background-size: cover;
     background-size: cover;
     padding: 0 5vw;
     padding-top: 5vh;
