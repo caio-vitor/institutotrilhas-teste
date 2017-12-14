@@ -1,0 +1,87 @@
+aside
+  display: flex
+  flex-flow: column wrap
+  width: 30vw
+  height: 82.25vh
+  order: 2
+
+
+  .sobre-cta
+    background:
+      image: linear-gradient(rgba($cinza, 0.4), rgba($cinza, 0.4)), url('/assets/imgs/aaron-burden-236415_filtro.jpg')
+    background-size: cover
+    padding: 0 5vw
+    padding-top: 5vh
+    flex-grow: 1.5
+
+    p
+      display: block
+      color: $creme
+      font: 400 3.75vh 'PT Sans'
+      text-align: justify
+
+    // copiado do blogitem.sass
+    a
+      background-color: $verde
+      border: 1px solid $cinza
+      padding: 1vh 5.7vw
+      color: white
+      text-align: center
+      font-family: 'Antic Slab', serif
+      font-size: 2vh
+      text-decoration: none
+
+      transition: all 0.256s ease-in-out
+
+      &:visited
+        color: white
+      &:hover
+        background-color: $vermelho
+        border-color: $creme
+        cursor: pointer
+
+
+
+  .contato-cta
+    background: $verde
+    height: 35%
+    padding: 0 5vw
+    color: $creme
+    h4
+      margin-top: 5vh
+      margin-bottom: 1vh
+      font: 400 4.75vh 'Antic Slab', serif
+    p
+      margin-top: 0
+      font: 400 1.7vh 'PT Sans', sans-serif
+
+    .contato-form
+      display: flex
+      width: 100%
+    input
+      background-color: rgba($creme, 0.6)
+      border: 1px solid $cinza
+      padding: 1vh
+      font: 400 1.6vh 'Antic Slab', serif
+      color: $cinza
+      flex-grow: 2
+      &:focus
+        border-color: $creme
+    button
+      background-color: $creme
+      border: 1px solid $cinza
+      padding: 0 1vw
+      font: 400 1.6vh 'Antic Slab', serif
+      color: opacify($cinza, 0.5)
+      transition: all 0.256s ease-in-out
+      &:hover
+        cursor: pointer
+        background-color: $vermelho
+        color: $creme
+        border-color: $creme
+
+
+@media (max-width: 1024px)
+  aside
+    position: relative
+    width: auto

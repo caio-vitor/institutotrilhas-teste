@@ -1,0 +1,19 @@
+mixin nav-content()
+  ul
+    li: a(href="/blog.html") Blog
+    li: a(href="/sobre.html") Sobre
+    li: a(href="/contato.html") Contato
+    
+header
+  a(href="/index.html"): img(src="/assets/imgs/logo_word_it-01.png").logo
+  nav.site-nav
+    +nav-content()
+  .mobile.mobile-btn(v-on:click="toggleMenu")
+    span
+    span
+    span
+
+transition(name="fade")
+  .mobile.mobile-nav(v-if="isActive")
+    +nav-content()
+  

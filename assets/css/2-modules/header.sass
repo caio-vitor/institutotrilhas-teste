@@ -1,0 +1,121 @@
+header
+  width: 100%
+  height: 11.8vh
+  background: $creme
+  box-sizing: border-box
+  display: flex
+  justify-content: space-between
+  align-items: center
+  .logo
+    width: 13.02vw
+    margin-left: 5vw
+
+  .site-nav
+    ul
+      display: flex
+      flex-flow: row wrap
+      list-style: none
+      margin: 14px 20.8vw 0 0
+      padding: 0
+      text-transform: uppercase
+      font-family: 'PT Sans', sans-serif
+      font-size: 1.1em
+      li
+        margin-right: 50px
+        &:last-child
+          margin-right: 0
+        a
+          text-decoration: none
+          color: $cinza
+          transition: color 0.3s ease
+          &:hover
+            color: $verde
+
+  .mobile-btn
+    display: none
+
+.mobile
+  display: none
+
+.mobile-nav
+  flex-flow: column wrap
+  align-content: center
+  text-align: center
+  background-color: $cinza
+
+  ul
+    list-style: none
+    text-transform: uppercase
+    font-family: 'PT Sans', sans-serif
+    font-size: 1.1em
+    padding: 15px 0
+    align-self: center
+    li a
+      text-decoration: none
+      color: $creme
+    li
+      margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0
+
+.fade-enter-active, .fade-leave-active
+  // display: flex
+  transition: opacity .4s
+
+.fade-enter, .fade-leave-to
+  // display: none
+  opacity: 0
+
+
+@media (max-width: 1280px)
+  header
+    .site-nav
+      ul
+        margin-right: 10vw
+
+@media (max-width: 1024px)
+  header
+    .logo
+      width: 25vh        
+
+@media (max-width: 768px)
+  header
+    width: auto
+
+    .site-nav
+      display: none
+
+    .mobile-btn
+      width: 50px
+      height: 30px
+      // background: blue
+      margin-right: 5vw
+      display: flex
+      flex-flow: column wrap
+      justify-content: space-between
+      align-self: center
+      cursor: pointer
+
+      span
+        content: ""
+        display: block
+        height: 2px
+        width: 100%
+        background-color: $cinza
+
+  .mobile
+    display: flex
+    margin: 0
+    width: 100%
+    height: 100%
+
+@media (max-width: 640px)
+  header
+    height: 80px
+    .logo
+      width: 150px
+      margin-top: 15px
+
+    .mobile-btn
+      width: 30px
+      height: 20px

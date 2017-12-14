@@ -1,0 +1,30 @@
+.blog-nav
+  margin: 5vh 0
+  padding: 0
+  width: 20vw
+  box-sizing: border-box
+  font: 400 2vh 'Antic Slab', serif
+  color: $cinza
+
+  input
+    padding-left: 1vw
+    padding-bottom: 0.5vh
+    font: 400 2vh 'Antic Slab', serif
+    border: 1px solid rgba($cinza, 0.3)
+    outline: none
+    color: $cinza
+    &::placeholder
+      color: rgba($cinza, 0.3)
+    &:focus
+      border: 1px solid $verde
+      box-shadow: 0 0 1px rgba($verde, 1)
+  ul
+    li
+      list-style-type: none
+    a
+      text-decoration: none
+      transition: color 0.3s ease-in-out
+      &:visited
+        color: $cinza
+      &:hover
+        color: $verde

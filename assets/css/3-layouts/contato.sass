@@ -1,0 +1,61 @@
+.contato
+  flex-direction: column
+  margin: 0 5vw
+  padding-top: 5vh
+  h1
+    color: $cinza
+    font: 400 3.5vh 'Antic Slab', serif
+    margin-bottom: 5vh
+  input
+    width: 30vw
+    height: 2vh
+    border: none
+    border-bottom: 1px solid $cinza
+    font: 400 1.7vh 'PT Sans', sans-serif
+    outline: none
+    margin-bottom: 3vh
+    color: $cinza
+    &:focus
+      box-shadow: none
+      border: none
+      border-bottom: 2px solid $verde
+
+    &::placeholder
+      color: rgba($cinza, 0.3)
+
+  .msg
+    width: 30vw
+    height: 30vh
+    border: none
+    border-bottom: 1px solid $cinza
+    font: 400 1.7vh 'PT Sans', sans-serif
+    outline: none
+    color: $cinza
+    resize: none
+    overflow: auto
+    box-sizing: border-box
+    &:focus
+      box-shadow: none
+      border: none
+      border-bottom: 2px solid $verde
+    &::placeholder
+      color: rgba($cinza, 0.3)
+
+@media (max-width: 1024px)
+  .contato
+    input
+      width: 50vw
+      height: 2.5vh
+      font-size: 2vh
+    .msg
+      width: 50vw
+      height: 40vh
+      font-size: 2vh
+@media (max-width: 640px)
+  .contato
+    padding-top: 2vh
+    input
+      width: auto
+    .msg
+      width: auto
+      height: 35vh

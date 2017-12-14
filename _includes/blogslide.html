@@ -1,0 +1,27 @@
+<script type="text/x-template" id="blog-template">
+  <div>
+    <carousel easing="ease-in-out" perPage="1" :paginationEnabled="false" :navigationEnabled="true" :navigationClickTargetSize="0" navigationPrevLabel=" " navigationNextLabel=" ">
+      {% for post in site.posts limit:5 %}
+        <slide>
+          <div class="blogslide-item">
+            <div class="image-container">
+              <img src="{{ post.image }}">
+            </div>
+            <div class="blogslide-content">
+              <h1>{{ post.title }}</h1>
+              <p class="post-meta">{{ post.date | date_to_long_string }}</p>
+              <p>{{ post.excerpt }}</p>
+              <a href="{{ post.url }}">leia +</a>
+            </div>
+          </div>
+        </slide>
+      {% endfor %}
+    </carousel>
+  </div>
+</script>
+
+<div class="blog-slide">
+  <div id="examplecv">
+
+  </div>
+</div>
