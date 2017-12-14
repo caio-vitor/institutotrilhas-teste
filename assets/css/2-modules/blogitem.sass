@@ -1,0 +1,63 @@
+.blog-item
+  width: 64vw
+  box-sizing: border-box
+  margin: 5vh 5vw
+  .item-image
+    display: flex
+    overflow: hidden
+    width: 100%
+    height: 34.51vh
+    position: relative
+    img
+      width: 100%
+      position: absolute
+      align-self: center
+  .item-title
+    font-family: 'Antic Slab', serif
+    font-weight: 400
+    color: $cinza
+    margin: 2vh 0
+    h2
+      font-size: 4.5vh
+      font-weight: 400
+      margin: 0
+    .meta
+      margin: 0
+  .post-description
+    font-family: 'PT Sans', sans-serif
+    color: $cinza
+    margin-top: 5vh
+    p
+      text-align: justify
+      margin-bottom: 2.4vh
+      line-height: 1.5
+    a
+      background-color: $verde
+      padding: 1vh 2.4vw
+      color: white
+      text-align: center
+      font-family: 'Antic Slab', serif
+      font-size: 2vh
+      text-decoration: none
+      box-sizing: border-box
+      transition: background-color 0.3s ease-in-out
+      &:visited
+        color: white
+      &:hover
+        background-color: $cinza
+        cursor: pointer
+
+@media (max-width: 1024px)
+  .blog-item
+    width: auto
+    box-sizing: border-box
+    .item-title
+      h2
+        font-size: 5.5vh
+
+    .post-description
+      p
+        margin-bottom: 5vh
+      a
+        padding: 1vh 6vw
+        font-size: 2.5vh

@@ -1,0 +1,15 @@
+---
+layout: default
+title: Instituto Trilhas | Blog
+---
+
+<div class="main-content">
+  <div class="blog">
+    {% for post in site.posts %}
+      {% include blogitem.html %}
+    {% endfor %}
+  </div>
+  <div class="side">
+    {% include blognav.html %}
+  </div>
+</div>

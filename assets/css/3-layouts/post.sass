@@ -1,0 +1,58 @@
+.post-main
+  display: flex
+  flex-flow: row wrap
+
+  .post-content
+    display: flex
+    flex-flow: column wrap
+    width: 70vw
+    box-sizing: border-box
+
+.post-image
+  +hide-text
+  display: flex
+  position: relative
+  overflow: hidden
+  width: 100%
+  height: 41.42vh
+  img
+    position: absolute
+    width: 100%
+    align-self: center
+.post-title
+  color: $cinza
+  margin: 5vh 5vw
+  h2
+    font-family: 'Antic Slab', serif
+    font-weight: 400
+    font-size: 7vh
+    margin: 0
+  .meta
+    font-family: 'PT Sans', sans-serif
+    font-weight: 400
+    margin: 0
+
+.post
+  margin: 5vh 5vw
+  color: $cinza
+  font: 400 2vh 'PT Sans', sans-serif
+  text-align: justify
+
+.post-side
+  width: 20vw
+  padding-left: 4vw
+
+@media (max-width: 1024px)
+  .post-image
+    height: 40vh
+
+  .post-main
+    .post-content
+      width: 100%
+
+  .post-title
+    margin-bottom: 0.5vh
+
+
+  .post-side
+    display: none

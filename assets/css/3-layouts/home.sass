@@ -1,0 +1,25 @@
+#wrapper
+  display: flex
+  flex-flow: column wrap
+  // justify-content: space-between
+
+  .blog
+    flex-direction: column
+
+  .main-content
+    display: flex
+    min-height: 82.25vh
+    box-sizing: border-box
+
+
+@media (max-width: 1024px)
+  .main-content
+    flex-flow: column wrap
+
+    .blog
+      width: 100vw
+      margin: 0.19vh
+      box-sizing: border-box
+
+    .side
+      display: none
