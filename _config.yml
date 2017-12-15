@@ -1,6 +1,6 @@
 name: Instituto Trilhas
 markdown: kramdown
 baseurl: http://caiovitor.com.br/institutotrilhas-teste/
-permalink: date
+permalink: /institutotrilhas-teste/:year/:month/:day/:title/
 highlighter: null # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
