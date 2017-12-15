@@ -11,7 +11,7 @@
               <h1>{{ post.title }}</h1>
               <p class="post-meta">{{ post.date | date_to_long_string }}</p>
               <p>{{ post.excerpt }}</p>
-              <a href="{{ post.url }}">leia +</a>
+              <a href="{{ post.url | prepend:site.baseurl }}">leia +</a>
             </div>
           </div>
         </slide>
