@@ -2,7 +2,6 @@
 layout: post
 title:  "Testando Posts 2"
 date:   2017-12-05 09:12
-categories: jekyll update
 image: 'https://images.unsplash.com/photo-1489595461171-4764773fd3a2?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D'
 ---
 
