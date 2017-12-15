@@ -1,5 +1,5 @@
 name: Instituto Trilhas
 markdown: kramdown
-baseurl: '/institutotrilhas-teste/'
+baseurl: '/institutotrilhas-teste'
 highlighter: null # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
