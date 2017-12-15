@@ -1,5 +1,4 @@
 name: Instituto Trilhas
 markdown: kramdown
-permalink: /:year/:month/:day/:title/
 highlighter: null # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
